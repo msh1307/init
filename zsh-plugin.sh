@@ -17,4 +17,4 @@ mkdir -p ~/.config/nvim/
 cp .vimrc ~/.config/nvim/init.vim
 cp .vimrc ~/.vimrc
 cp .zshrc ~/
-vi -c "PlugInstall|qa"
+vi -c "PlugInstall" -c "redraw" -c "qa"
