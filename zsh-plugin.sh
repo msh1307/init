@@ -18,3 +18,4 @@ cp .vimrc ~/.config/nvim/init.vim
 cp .vimrc ~/.vimrc
 cp .zshrc ~/
 # vi -c "PlugInstall" -c "redraw" -c "qa"
+# if using tmux -> alias tmux="TERM=screen-256color-bce tmux" in .zshrc
