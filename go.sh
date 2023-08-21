@@ -18,4 +18,7 @@ cp .vimrc ~/.config/nvim/init.vim
 cp .vimrc ~/.vimrc
 cp .zshrc ~/
 # vi -c "PlugInstall" -c "redraw" -c "qa"
-# if using tmux -> alias tmux="TERM=screen-256color-bce tmux" in .zshrc
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+cp .tmux.conf ~/
+tmux source ~/.tmux.conf
+# tmux -> Ctrl + b + I -> Install tmux plugins
