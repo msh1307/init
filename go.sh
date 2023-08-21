@@ -19,6 +19,7 @@ cp .vimrc ~/.vimrc
 cp .zshrc ~/
 # vi -c "PlugInstall" -c "redraw" -c "qa"
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+sudo apt install tmux -y
 cp .tmux.conf ~/
 tmux source ~/.tmux.conf
 # tmux -> Ctrl + b + I -> Install tmux plugins
