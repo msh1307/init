@@ -17,7 +17,7 @@ git clone https://github.com/pwndbg/pwndbg
 cd pwndbg
 ./setup.sh
 cd ..
-echo source ~/pwndbg/gdbinit.py >> ~/.gdbinit
+echo "source ~/pwndbg/gdbinit.py\nsource ~/Pwngdb/pwngdb.py\nsource ~/Pwngdb/angelheap/gdbinit.py\ndefine hook-run\npython\nimport angelheap\nangelheap.init_angelheap()\nend\nend" >> ~/.gdbinit
 sudo apt install ruby-full -y
 sudo gem install one_gadget seccomp-tools
 sudo wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | zsh || true
