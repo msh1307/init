@@ -3,7 +3,7 @@ sudo apt update
 sudo apt install qemu-user-static file
 sudo apt install vim git gcc ssh curl wget gdb sudo zsh python3 python3-pip libffi-dev build-essential libssl-dev libc6-i386 libc6-dbg gcc-multilib make -y
 sudo apt install -y qemu-system qemu-kvm
-sudo apt install python-is-python3
+sudo apt install python-is-python3 
 sudo dpkg --add-architecture i386
 sudo apt update
 sudo apt install libc6:i386 -y
@@ -15,6 +15,7 @@ pip3 install ropgadget
 sudo apt install libcapstone-dev -y
 git clone https://github.com/scwuaptx/Pwngdb
 git clone https://github.com/pwndbg/pwndbg
+git clone https://github.com/NixOS/patchelf
 cd pwndbg
 ./setup.sh
 cd ..
