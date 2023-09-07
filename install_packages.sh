@@ -14,12 +14,14 @@ pip3 install pwntools
 pip3 install ropgadget
 sudo apt install libcapstone-dev -y
 git clone https://github.com/scwuaptx/Pwngdb
-git clone https://github.com/pwndbg/pwndbg
+#git clone https://github.com/pwndbg/pwndbg
+git clone https://github.com/hugsy/gef
 git clone https://github.com/NixOS/patchelf
 cd pwndbg
 ./setup.sh
 cd ..
-echo "source ~/pwndbg/gdbinit.py" >> ~/.gdbinit
+echo "source ~/gef/gef.py" >> ~/.gdbinit
+#echo "source ~/pwndbg/gdbinit.py" >> ~/.gdbinit
 echo "source ~/Pwngdb/pwngdb.py" >> ~/.gdbinit
 echo "source ~/Pwngdb/angelheap/gdbinit.py" >> ~/.gdbinit
 echo "define hook-run" >> ~/.gdbinit
