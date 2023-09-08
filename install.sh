@@ -17,6 +17,12 @@ git clone https://github.com/scwuaptx/Pwngdb
 #git clone https://github.com/pwndbg/pwndbg
 git clone https://github.com/hugsy/gef
 git clone https://github.com/NixOS/patchelf
+git clone https://github.com/leowhitehead/GDBDecompile.git
+cd GDBDecompile/
+pip install -r requirements.txt
+echo source $PWD/GDBDecompile.py >> ~/.gdbinit
+cd ..
+# ADD ghidra path in ~/GDBDecompile/config.toml
 cd pwndbg
 ./setup.sh
 cd ..
