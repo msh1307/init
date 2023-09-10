@@ -39,19 +39,18 @@ call plug#end()
 " color setting
 colorscheme dracula
 let g:dracula_colorterm = 0
-
 let mapleader=","
 " line number
-set number relativenumber
-set nu rnu
+"set number relativenumber
+"set rnu
 
 
 syntax on           "구문 강조
 set t_Co=256        "구문강조 색 변경
 set encoding=utf-8
-set nu              "Line 출력
 set tabstop=4       "<Tab> key 4칸 이동
 set cursorline      "현재 줄 강조
+set nu              "Line 출력
 set ruler
 set laststatus=2    "두줄로 표시
 set statusline=\ %<%l:%v\ [%P]%=%a\ %h%m%r\ %F\  "현재 라인 위치 출력
@@ -116,7 +115,7 @@ inoremap <expr> <cr> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
 
 " set asterick
 map *   <Plug>(asterisk-*)
-let g:asterisk#keeppos = 1
+"let g:asterisk#keeppos = 1
 
  " 
 endif
@@ -129,4 +128,3 @@ if executable(s:clip)
     augroup END
 endif
 set mouse=n
-
