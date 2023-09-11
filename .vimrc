@@ -128,3 +128,4 @@ if executable(s:clip)
     augroup END
 endif
 set mouse=n
+set shiftwidth=4
