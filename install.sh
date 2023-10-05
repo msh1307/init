@@ -1,7 +1,7 @@
 cd ~/
 sudo apt update
 sudo apt install qemu-user-static file
-sudo apt install vim git gcc ssh curl wget gdb sudo zsh python3 python3-pip libffi-dev build-essential libssl-dev libc6-i386 libc6-dbg gcc-multilib make -y
+sudo apt install neovim git gcc ssh curl wget gdb sudo zsh python3 python3-pip libffi-dev build-essential libssl-dev libc6-i386 libc6-dbg gcc-multilib make -y
 sudo apt install -y qemu-system qemu-kvm
 sudo apt install python-is-python3 
 sudo dpkg --add-architecture i386
