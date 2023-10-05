@@ -128,3 +128,4 @@ endif
 set mouse=n
 set shiftwidth=4
 color dracula
+set guicursor=
