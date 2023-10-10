@@ -1,5 +1,5 @@
 set nocompatible              " be iMproved, required
-filetype plugin indent on
+filetype plugin indent on     
 
 " Disable annoying beeping
 set belloff=all
@@ -24,11 +24,11 @@ call plug#begin()
 Plug 'blueyed/vim-diminactive' "화면 분할 시 background color 변경
 Plug 'koron/nyancat-vim'
 Plug 'vim-airline/vim-airline'
-Plug 'preservim/nerdtree'
+Plug 'preservim/nerdtree' 
 Plug 'dracula/vim', { 'as': 'dracula' }
 
 " coc plugin
-Plug 'haya14busa/vim-asterisk'
+" Plug 'haya14busa/vim-asterisk'
 
 call plug#end()
 
@@ -107,15 +107,16 @@ endfunction
 "if exists('*complete_info')
 "inoremap <expr> <cr> complete_info()["selected"] != "-1" ? "\<C-y>" : "\<C-g>u\<CR>"
 "else
-inoremap <expr> <cr> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
+
+"inoremap <expr> <cr> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
 
 
 
 " set asterick
-map *   <Plug>(asterisk-*)
+" map *   <Plug>(asterisk-*)
 "let g:asterisk#keeppos = 1
 
- "
+ " 
 "endif
  " WSL yank support
 let s:clip = '/mnt/c/Windows/System32/clip.exe'  " change this path according to your mount point
@@ -127,5 +128,4 @@ if executable(s:clip)
 endif
 set mouse=n
 set shiftwidth=4
-color dracula
-set guicursor=
+colorscheme dracula
