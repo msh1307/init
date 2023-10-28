@@ -71,16 +71,16 @@ set showcmd
 nmap <Leader>rc :rightbelow vnew $MYVIMRC<CR>
 
 " nerdtre setting
-nmap <C-F> :NERDTreeFind<CR>
+" nmap <C-F> :NERDTreeFind<CR>
 nmap <Leader>nerd :NERDTreeToggle<CR>
 
 
  " ultisnips
  "
  " " ultisnips
-let g:UltiSnipsExpandTrigger="<C-y>"
-let g:UltiSnipsJumpForwardTrigger="<Right>"
-let g:UltiSnipsJumpBackwardTrigger="<Left>"
+"let g:UltiSnipsExpandTrigger="<C-y>"
+"let g:UltiSnipsJumpForwardTrigger="<Right>"
+"let g:UltiSnipsJumpBackwardTrigger="<Left>"
 
 
 " coc.nvim
@@ -94,10 +94,10 @@ let g:UltiSnipsJumpBackwardTrigger="<Left>"
 "\ coc#refresh()
 " inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
 
-function! s:check_back_space() abort
-let col = col('.') - 1
-return !col || getline('.')[col - 1]  =~# '\s'
-endfunction
+"function! s:check_back_space() abort
+"let col = col('.') - 1
+"return !col || getline('.')[col - 1]  =~# '\s'
+"endfunction
 " Use <c-space> to trigger completion.
 " inoremap <silent><expr> <c-space> coc#refresh()
 
