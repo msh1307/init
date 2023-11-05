@@ -132,4 +132,4 @@ set shiftwidth=4
 colorscheme dracula
 set guicursor=
 hi CurrentWord ctermbg=53
-hi CurrentWordTwins ctermbg=239
+hi CurrentWordTwins ctermbg=53
