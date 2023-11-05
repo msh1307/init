@@ -11,7 +11,7 @@ set cindent
 set ignorecase
 
 
-set cursorcolumn
+" set cursorcolumn
 
 set clipboard=unnamed
 
@@ -23,6 +23,7 @@ call plug#begin()
 " basic plugin
 Plug 'blueyed/vim-diminactive' "화면 분할 시 background color 변경
 Plug 'koron/nyancat-vim'
+Plug 'dominikduda/vim_current_word'
 Plug 'vim-airline/vim-airline'
 Plug 'preservim/nerdtree' 
 Plug 'dracula/vim', { 'as': 'dracula' }
@@ -49,7 +50,7 @@ syntax on           "구문 강조
 set t_Co=256        "구문강조 색 변경
 set encoding=utf-8
 set tabstop=4       "<Tab> key 4칸 이동
-set cursorline      "현재 줄 강조
+" set cursorline      "현재 줄 강조
 set nu              "Line 출력
 set ruler
 set laststatus=2    "두줄로 표시
@@ -130,3 +131,5 @@ set mouse=n
 set shiftwidth=4
 colorscheme dracula
 set guicursor=
+hi CurrentWord ctermbg=53
+hi CurrentWordTwins ctermbg=237
