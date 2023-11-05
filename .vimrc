@@ -11,7 +11,7 @@ set cindent
 set ignorecase
 
 
-" set cursorcolumn
+set cursorcolumn
 
 set clipboard=unnamed
 
@@ -50,7 +50,7 @@ syntax on           "구문 강조
 set t_Co=256        "구문강조 색 변경
 set encoding=utf-8
 set tabstop=4       "<Tab> key 4칸 이동
-" set cursorline      "현재 줄 강조
+set cursorline      "현재 줄 강조
 set nu              "Line 출력
 set ruler
 set laststatus=2    "두줄로 표시
