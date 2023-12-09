@@ -104,7 +104,7 @@ it requires little modification.
  3383     # use cache
 ```
 
-gdbscript.py
+gdbscript.py example
 ```
 import gdb
 gdb.execute('set debug-file-directory /ubuntu2004/lib/debug')
