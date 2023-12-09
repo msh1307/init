@@ -50,7 +50,7 @@ gef.py
  3382             
  3383     # use cache
 ```
-using gef, it fails to recognize glibc version.
+using gef, it fails to recognize glibc version after patching a binary.
 it requires little modification.
 ```
  3335 def get_libc_version():
