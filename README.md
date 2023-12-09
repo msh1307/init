@@ -50,6 +50,8 @@ gef.py
  3382             
  3383     # use cache
 ```
+![image](https://github.com/msh1307/init/assets/86157260/15b53bb7-0d6f-4f7f-8d8b-2bbfa345289f)
+
 using gef, it fails to recognize glibc version after patching a binary. <br>
 it requires little modification.
 ```
@@ -103,6 +105,7 @@ it requires little modification.
  3382             
  3383     # use cache
 ```
+![image](https://github.com/msh1307/init/assets/86157260/5e5b097d-1f2d-475b-a4dc-4b1db04a1864)
 
 gdbscript.py example
 ```
