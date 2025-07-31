@@ -12,24 +12,25 @@ pip3 install unicorn
 pip3 install keystone-engine
 pip3 install pwntools
 pip3 install ropgadget
+pip3 install uv
 sudo apt install libcapstone-dev -y
-git clone https://github.com/scwuaptx/Pwngdb
+# git clone https://github.com/scwuaptx/Pwngdb
 #git clone https://github.com/pwndbg/pwndbg
 #git clone https://github.com/hugsy/gef
-wget -q https://raw.githubusercontent.com/bata24/gef/dev/install.sh -O- | sudo sh
+wget -q https://raw.githubusercontent.com/bata24/gef/dev/install-uv.sh -O- | sudo sh
+# wget -q https://raw.githubusercontent.com/bata24/gef/dev/install.sh -O- | sudo sh
 git clone https://github.com/NixOS/patchelf
 #cd pwndbg
 #./setup.sh
 #cd ..
 #echo "source ~/gef/gef.py" >> ~/.gdbinit
 #echo "source ~/pwndbg/gdbinit.py" >> ~/.gdbinit
-echo "source ~/Pwngdb/pwngdb.py" >> ~/.gdbinit
+# echo "source ~/Pwngdb/pwngdb.py" >> ~/.gdbinit
 echo "source ~/Pwngdb/angelheap/gdbinit.py" >> ~/.gdbinit
 echo "define hook-run" >> ~/.gdbinit
 echo "python" >> ~/.gdbinit
 echo "import angelheap" >> ~/.gdbinit
 echo "angelheap.init_angelheap()" >> ~/.gdbinit
-echo "end" >> ~/.gdbinit
 echo "end" >> ~/.gdbinit
 sudo apt install ruby-full -y
 sudo gem install one_gadget seccomp-tools
