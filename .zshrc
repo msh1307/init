@@ -118,6 +118,6 @@ alias cmd.exe=/mnt/c/Windows/System32/cmd.exe
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 export LS_COLORS=$LS_COLORS:'ow=36:'
-ulimit -c unlimited
+# ulimit -c unlimited
 alias tmux="TERM=screen-256color-bce tmux"
-echo "core.%e" > /proc/sys/kernel/core_pattern
+# echo "core.%e" > /proc/sys/kernel/core_pattern

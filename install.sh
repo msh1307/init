@@ -14,12 +14,14 @@ pip3 install pwntools
 pip3 install ropgadget
 pip3 install uv
 sudo apt install libcapstone-dev -y
+
+curl -qsL 'https://install.pwndbg.re' | sh -s -- -t pwndbg-gdb
 # git clone https://github.com/scwuaptx/Pwngdb
 #git clone https://github.com/pwndbg/pwndbg
 #git clone https://github.com/hugsy/gef
-wget -q https://raw.githubusercontent.com/bata24/gef/dev/install-uv.sh -O- | sudo sh
+# wget -q https://raw.githubusercontent.com/bata24/gef/dev/install-uv.sh -O- | sudo sh
 # wget -q https://raw.githubusercontent.com/bata24/gef/dev/install.sh -O- | sudo sh
-git clone https://github.com/NixOS/patchelf
+# git clone https://github.com/NixOS/patchelf
 #cd pwndbg
 #./setup.sh
 #cd ..
