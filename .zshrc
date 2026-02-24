@@ -121,3 +121,4 @@ export LS_COLORS=$LS_COLORS:'ow=36:'
 # ulimit -c unlimited
 alias tmux="TERM=screen-256color-bce tmux"
 # echo "core.%e" > /proc/sys/kernel/core_pattern
+export WINDOW_HOST=$(ip route show | grep -i default | awk '{print $3}')
